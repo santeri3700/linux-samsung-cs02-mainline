@@ -1,14 +1,25 @@
-/* Hawaii_ss_cs02_rev00 Dts file */
+/*
+ * Copyright (C) 2014 Broadcom Corporation
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License as
+ * published by the Free Software Foundation version 2.
+ *
+ * This program is distributed "as is" WITHOUT ANY WARRANTY of any
+ * kind, whether express or implied; without even the implied warranty
+ * of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ */
 
 /dts-v1/;
 
 #include <dt-bindings/gpio/gpio.h>
 
-/include/ "bcm21664.dtsi"
+#include "bcm21664.dtsi"
 
 / {
 	model = "Samsung Galaxy Core Plus SM-G350 (cs02)";
-	compatible = "bcm,bcm21664";
+	compatible = "brcm,bcm21664-cs02", "brcm,bcm21664";
 
 	chosen {
 		bootargs = "console=ttyS2,115200n8 mem=736M gpt pmem=200M carveout=32M crash_ramdump=1 logbuf_nocache=1 PMOS_NO_OUTPUT_REDIRECT";
