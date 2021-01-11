@@ -150,6 +150,7 @@ dtb-$(CONFIG_ARCH_BCM_HR2) += \
 	bcm53340-ubnt-unifi-switch8.dtb
 dtb-$(CONFIG_ARCH_BCM_MOBILE) += \
 	bcm28155-ap.dtb \
+	bcm21664-cs02.dtb \
 	bcm21664-garnet.dtb \
 	bcm23550-sparrow.dtb
 dtb-$(CONFIG_ARCH_BCM_NSP) += \
